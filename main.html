@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Account</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-800">
+ 
+    <section class="max-w-md min-h-screen bg-slate-400 py-6 mx-auto">
+        <header class="text-black">
+            <nav class="flex justify-between items-center  pb-3 border-b-2 px-4">
+                <!-- border-b-2 border-green-500  border-b-->
+                <div class="flex justify-between items-center gap-6">
+                    <img class="w-16" src="assets/Group.png" alt="">
+                    <div class="mb-2">
+                        <h1 class="text-3xl font-bold mb-3">$4500</h1>
+                        <small class="font-bold border p-2 ">Avilable Blance</small>
+                    </div>
+                </div>
+                <button class="btn font-bold">Log Out</button>
+            </nav>
+
+            <section class="mt-5 border-b-2 pb-3 ">
+                <h1 class="text-2xl font-bold mb-2 mx-3">🔥 Welcome to Payooo!</h1>
+                <p class="font-bold mx-3">Enjoy easy and convenient financial services with us. Cashout charge is low and Get exciting Bonus.</p>
+                <!-- Cards Sections -->
+                <div class="cards grid grid-cols-3 mt-14 gap-2 px-3 ">
+                    <div class="box border-2 bg-white p-2 rounded-xl cursor-pointer hover:bg-blue-500">
+                        <img class="w-10 mx-auto" src="assets/wallet1.png" alt="">
+                        <h3 class="font-bold text-center">Add Money</h3>
+                    </div>
+
+                    <div class="box border-2 bg-white p-2 rounded-xl cursor-pointer hover:bg-blue-500">
+                        <img class="w-10 mx-auto" src="assets/send1.png" alt="">
+                        <h3 class="font-bold text-center">Cashout</h3>
+                    </div>
+
+                    <div class="box border-2 bg-white p-2 rounded-xl cursor-pointer hover:bg-blue-500">
+                        <img class="w-10 mx-auto" src="assets/money1.png" alt="">
+                        <h3 class="text-center">Transfer Money</h3>
+                    </div>
+
+                    <div class="box border-2 bg-white p-2 rounded-xl cursor-pointer hover:bg-blue-500">
+                        <img class="w-10 mx-auto" src="assets/bonus1.png" alt="">
+                        <h3 class="font-bold text-center">Get Bonus</h3>
+                    </div>
+
+                    <div class="box border-2 bg-white p-2 rounded-xl cursor-pointer hover:bg-blue-500">
+                        <img class="w-10 mx-auto" src="assets/purse1.png" alt="">
+                        <h3 class="font-bold text-center">Pay Bill</h3>
+                    </div>
+
+                    <div class="box border-2 bg-white p-2 rounded-xl cursor-pointer hover:bg-blue-500">
+                        <img class="w-10 mx-auto" src="assets/transaction1.png" alt="">
+                        <h3 class="font-bold text-center">Transections</h3>
+                    </div>
+
+
+
+                </div>
+
+                <!-- Add Money Section -->
+
+            </section>
+
+            <section class="mt-5 mx-2 pb-3">
+                <h1 class="font-bold text-xl text-blue-700">Add Money</h1>
+
+                <div class="">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                      
+                      <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                            <legend class="font-bold" > Select A Bank</legend>
+                            <select class="select font-bold" required>
+                                <option disabled selected>Select</option>
+                                <option value="bikash">Bikash</option>
+                                <option value="nagod">Nagod</option>
+                                <option value="rocket">Rocket</option>
+                                <option value="ucash">U-Cash</option>
+                                <option value="upay">Upay</option>
+                              </select>
+                              <form action="">
+                                <fieldset class="fieldset">
+                                    <label class="fieldset-label font-bold">Account Number</label>
+                                    <br>
+                                    <input type="text" class="input w-full" placeholder="Enter Your Account Number" value="01713687777" required/>
+                                    <br>
+                                    <label class="fieldset-label font-bold">Amount</label>
+                                    <br>
+                                    <input type="text" class="input w-full" placeholder="Enter Amount" required />
+                                    <label class="fieldset-label font-bold">PIN</label>
+                                    <br>
+                                    <input type="text" class="input w-full" placeholder="Enter 4 Digit Pin" value="1234" required/>
+                              </form>
+                            
+                            <button id="add-money-btn" class="btn w-full mt-4 font-bold bg-sky-500 rounded-3xl">Add Money</button>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+             </section>
+
+
+        </header>
+    </section>
+
+    <script src="script/addMoney.js"></script>
+</body>
+</html>

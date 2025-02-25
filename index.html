@@ -1,0 +1,51 @@
+<!DOCTYPE html >
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo Mobile App</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen bg-slate-400 py-6 mx-auto">
+        <header>
+            <nav class="flex justify-center items-center mt-6">
+                <div class="flex justify-center items-center mt-10 relative w-9/12">
+                    <img class="w-48 absolute" src="assets/bg.png" alt="">
+                    <img src="assets/Group.png" alt="">
+                </div>
+            </nav>
+        </header>
+    
+        <!-- Login Section -->
+        <form class=" bg-slate-400  ">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card bg-base-00 w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card-body">
+                  <fieldset class="fieldset">
+                    <label class="fieldset-label font-bold">Account Number</label>
+                    <br>
+                    <input id="Account-number" value="01713687777" type="number" class="input w-full" placeholder="Enter Your A/C Number" required />
+                    <br>
+                    <label  class="fieldset-label font-bold">PIN</label>
+                    <br>
+                    <input value="1234" id="pin" type="text" class="input w-full" placeholder="Enter Your 4 Digit Pin" required />
+                    <div><a class="link link-hover font-bold">Forgot PIN?</a></div>
+
+                    <button id="login-btn" class="btn bg-sky-500 mt-4 w-full font-bold text-lg rounded-3xl">Login</button>
+                 
+                </fieldset>
+                </div>
+              </div>
+            </div>
+          </form>
+
+
+
+    </section>
+
+
+    <script src="script/index.js"></script>
+</body>
+</html>
