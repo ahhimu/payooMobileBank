@@ -1,6 +1,7 @@
 // Hide Cashout Section
  document.getElementById('cashout-container').style.display="none";
  document.getElementById('addmoney-container').style.display="block";
+ document.getElementById('transfer-container').style.display="none";
 document.getElementById('addmoney-box').addEventListener("click",function(){
     document.getElementById('cashout-container').style.display="none";
     document.getElementById('addmoney-container').style.display="block";

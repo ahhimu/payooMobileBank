@@ -4,6 +4,7 @@
 document.getElementById('cashout-box').addEventListener("click",function(){
 document.getElementById('cashout-container').style.display="block";
 document.getElementById('addmoney-container').style.display="none";
+document.getElementById('transfer-container').style.display="none";
 
 
 })

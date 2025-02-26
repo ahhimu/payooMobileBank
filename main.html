@@ -38,7 +38,7 @@
                         <h3 class="font-bold text-center">Cashout</h3>
                     </div>
 
-                    <div class="box border-2 bg-white p-2 rounded-xl cursor-pointer hover:bg-blue-500">
+                    <div id="transfer-box" class="box border-2 bg-white p-2 rounded-xl cursor-pointer hover:bg-blue-500">
                         <img class="w-10 mx-auto" src="assets/money1.png" alt="">
                         <h3 class="text-center">Transfer Money</h3>
                     </div>
@@ -140,10 +140,45 @@
 
              </section>
 
+
+             <!-- Tranesfer Money Section -->
+             <section id="transfer-container" class="mt-5 mx-2 pb-3">
+                <h1 class="font-bold text-xl text-blue-700">Transfer Money</h1>
+
+                <div class="">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                      
+                      <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                          
+                              <form action="">
+                                <fieldset class="fieldset">
+                                    <label class="fieldset-label font-bold"> Recipient Number</label>
+                                    <br>
+                                    <input id="recipent-number" type="text" class="input w-full" placeholder="Enter CashOut Agent Number" value="01713687777" required/>
+                                    <br>
+                                    <label class="fieldset-label font-bold">Amount</label>
+                                    <br>
+                                    <input id="transfer-amount" type="text" class="input w-full" placeholder="Enter Amount" required />
+                                    <label class="fieldset-label font-bold">PIN</label>
+                                    <br>
+                                    <input id="transfer-pin" type="text" class="input w-full" placeholder="Enter 4 Digit Pin" value="1234" required/>
+                              </form>
+                            
+                            <button id="transfer-btn" class="btn w-full mt-4 font-bold bg-sky-500 rounded-3xl">Transfer Money</button>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+             </section>
+
         </header>
     </section>
 
     <script src="script/addMoney.js"></script>
     <script src="script/cashout.js"></script>
+    <script src="script/transfer.js"></script>
 </body>
 </html>
