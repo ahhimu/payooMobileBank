@@ -1,3 +1,11 @@
+// Hide Cashout Section
+ document.getElementById('cashout-container').style.display="none";
+ document.getElementById('addmoney-container').style.display="block";
+document.getElementById('addmoney-box').addEventListener("click",function(){
+    document.getElementById('cashout-container').style.display="none";
+    document.getElementById('addmoney-container').style.display="block";
+})
+
 document.getElementById('add-money-btn').addEventListener('click',function(event){
     event.preventDefault();
     const amount = document.getElementById('amount').value;
