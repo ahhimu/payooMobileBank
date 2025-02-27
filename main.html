@@ -43,7 +43,7 @@
                         <h3 class="text-center">Transfer Money</h3>
                     </div>
 
-                    <div class="box border-2 bg-white p-2 rounded-xl cursor-pointer hover:bg-blue-500">
+                    <div id="bonus-box" class="box border-2 bg-white p-2 rounded-xl cursor-pointer hover:bg-blue-500">
                         <img class="w-10 mx-auto" src="assets/bonus1.png" alt="">
                         <h3 class="font-bold text-center">Get Bonus</h3>
                     </div>
@@ -67,14 +67,17 @@
             </section >
 
             <section id="addmoney-container" class="mt-5 mx-2 pb-3">
-                <h1 class="font-bold text-xl text-blue-700">Add Money</h1>
+                <h1 class="font-bold text-4xl text-blue-700 text-center">Add Money</h1>
+                <marquee class="text-fuchsia-950 font-bold text-2xl">
+                    <span>Added Money For Any Mobile Bank & Get Exciting Bonus !</span>
+                </marquee>
 
                 <div class="">
                     <div class="hero-content flex-col lg:flex-row-reverse">
                       
                       <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
                         <div class="card-body">
-                            <legend class="font-bold" > Select A Bank</legend>
+                            <legend class="font-bold" > Select A Mobile Bank</legend>
                             <select id="select" class="select font-bold" required>
                                 <option disabled selected>Select</option>
                                 <option value="bikash">Bikash</option>
@@ -109,7 +112,11 @@
 
              <!-- CashOut Section -->
              <section id="cashout-container" class="mt-5 mx-2 pb-3">
-                <h1 class="font-bold text-xl text-blue-700">CashOut</h1>
+                <h1 class="font-bold text-4xl text-blue-700 text-center ">CashOut</h1>
+
+                <h1 class="text-fuchsia-950 font-bold text-2xl text-center">Compared to others, our cash-out charge is the lowest!</h1>
+
+
 
                 <div class="">
                     <div class="hero-content flex-col lg:flex-row-reverse">
@@ -174,11 +181,86 @@
 
              </section>
 
+
+             <!-- Get Bonus Section -->
+              <section id="coupon-code">
+                <h1 class="font-bold text-4xl text-blue-700 text-center">Get Your Bonus</h1>
+
+                <div class="">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                      
+                      <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                          
+                              <form action="">
+                                <fieldset class="fieldset">
+                                    <label class="fieldset-label font-bold"> Enter Your Coupon Code</label>
+                                    <br>
+                                    <input id="get-bonus" type="text" class="input w-full text-center" placeholder="Enter Your 16 Digit Coupon Code Here" value="6158-4698-7365-4856" required/>
+                                    <br>
+                                    
+                              </form>
+                            
+                            <button id="bonus-btn" class="btn w-full mt-4 font-bold bg-sky-500 rounded-3xl">Get Bonus</button>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+              </section>
+
+              <!-- Pay Your Bill -->
+              <section id="coupon-code" class="mt-5 mx-2 pb-3">
+                <h1 class="font-bold text-4xl text-blue-700 text-center">Pay Your Utility Bill</h1>
+
+                
+                <div class="">
+                  
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                      
+                      <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                          <label class="fieldset-label font-bold"> Select Your Bill Type </label>
+
+                          <select class="select select-secondary w-full max-w-xs">
+                            <option disabled selected>Pick Your Bill Type</option>
+                            <option>Electricity</option>
+                            <option>Gas</option>
+                            <option>Internet</option>
+                            <option>Water</option>
+                            <option>Telephone</option>
+                            <option>Education</option>
+                            <option>Insurance</option>
+                            <option>Others</option>
+                          </select>
+                              <form action="">
+                                <fieldset class="fieldset">
+                                    <label class="fieldset-label font-bold "> Enter Your Biller Id </label>
+                                    <br>
+                                  
+                                    <input id="get-bonus" type="text" class="input w-full text-center" placeholder="Enter Your 16 Digit Coupon Code Here" value="6158-4698-7365-4856" required/>
+                                    <br>
+                                    
+                              </form>
+                            
+                            <button id="bonus-btn" class="btn w-full mt-4 font-bold bg-sky-500 rounded-3xl">Pay Now </button>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+              </section>
+
+
         </header>
     </section>
 
     <script src="script/addMoney.js"></script>
     <script src="script/cashout.js"></script>
     <script src="script/transfer.js"></script>
+    <script src="script/getbouns.js"></script>
+    <script src="script/paybil.js"></script>
 </body>
 </html>

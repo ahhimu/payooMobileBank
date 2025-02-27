@@ -5,6 +5,7 @@ document.getElementById('transfer-box').addEventListener("click",function(){
     document.getElementById('cashout-container').style.display="none";
     document.getElementById('addmoney-container').style.display="none";
     document.getElementById('transfer-container').style.display="block";
+    document.getElementById('coupon-code').style.display="none";
     
     
     })

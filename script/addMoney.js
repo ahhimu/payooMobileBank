@@ -2,9 +2,13 @@
  document.getElementById('cashout-container').style.display="none";
  document.getElementById('addmoney-container').style.display="block";
  document.getElementById('transfer-container').style.display="none";
+ document.getElementById('coupon-code').style.display="none";
 document.getElementById('addmoney-box').addEventListener("click",function(){
+    // this.style.backgroundColor = "red";
     document.getElementById('cashout-container').style.display="none";
     document.getElementById('addmoney-container').style.display="block";
+
+    document.getElementById('coupon-code').style.display="none";
 })
 
 document.getElementById('add-money-btn').addEventListener('click',function(event){
