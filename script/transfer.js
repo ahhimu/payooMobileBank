@@ -7,6 +7,7 @@ document.getElementById('transfer-box').addEventListener("click",function(){
     document.getElementById('transfer-container').style.display="block";
     document.getElementById('coupon-code').style.display="none";
     document.getElementById('paybill-container').style.display="none";
+    document.getElementById('transection-history').style.display="none";
     
     })
     
@@ -21,6 +22,9 @@ document.getElementById('transfer-box').addEventListener("click",function(){
     const convertedPin = parseInt(pin);
     const mainBalance = document.getElementById('main-balance').innerText;
         const convertedMainBalance = parseFloat(mainBalance);
+
+        const container = document.getElementById('transection-container');
+
     
     
     if(recipientNumber.length !== 11){
@@ -33,6 +37,22 @@ document.getElementById('transfer-box').addEventListener("click",function(){
             const sum = convertedMainBalance - convertedtransferAmount;
               
             document.getElementById('main-balance').innerText = sum;
+
+            const now = new Date();
+            const formattedTime = now.toLocaleString(); 
+
+            const p = document.createElement("p");
+            p.style.border = "2px solid black"
+            p.style.padding = "8px";
+            p.style.backgroundColor = "White";
+            p.style.borderRadius = "15px";
+            p.style.textAlign = "justify";
+           
+            p.innerText = `
+            Blance Transfer Successfylly! Amount: ${convertedtransferAmount}, Account Nember: ${recipientNumber} at ${formattedTime}. Now Balance: ${sum}
+            Thank You. `;
+            container.appendChild(p);
+
         }
         else{
             alert("Please Provide Valid Pin Number!");

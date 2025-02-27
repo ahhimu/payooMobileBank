@@ -6,6 +6,7 @@ document.getElementById('cashout-container').style.display="block";
 document.getElementById('addmoney-container').style.display="none";
 document.getElementById('transfer-container').style.display="none";
 document.getElementById('paybill-container').style.display="none";
+document.getElementById('transection-history').style.display="none";
 
 
 })
@@ -23,6 +24,9 @@ const mainBalance = document.getElementById('main-balance').innerText;
     const convertedMainBalance = parseFloat(mainBalance);
 
 
+    const container = document.getElementById('transection-container');
+
+
 if(agentNumber.length !== 11){
     alert("Wrong Agent Number");
     return;
@@ -33,6 +37,32 @@ if(convertedCashoutAmount >= 50){
         const sum = convertedMainBalance - convertedCashoutAmount;
           
         document.getElementById('main-balance').innerText = sum;
+
+
+        const now = new Date();
+            const formattedTime = now.toLocaleString(); 
+
+            const p = document.createElement("p");
+            p.style.border = "2px solid black"
+            p.style.padding = "8px";
+            p.style.backgroundColor = "White";
+            p.style.borderRadius = "15px";
+            p.style.textAlign = "justify";
+           
+            p.innerText = `
+            Cash Out Successfylly! Amount: ${convertedCashoutAmount}, Agent Number : ${agentNumber} at ${formattedTime}. Now Balance: ${sum}
+            Thank You. `;
+            container.appendChild(p);
+
+
+
+
+
+
+
+
+
+
     }
     else{
         alert("Please Provide Valid Pin Number!");

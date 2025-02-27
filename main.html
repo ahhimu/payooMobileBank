@@ -53,7 +53,7 @@
                         <h3 class="font-bold text-center">Pay Bill</h3>
                     </div>
 
-                    <div class="box border-2 bg-white p-2 rounded-xl cursor-pointer hover:bg-blue-500">
+                    <div id="transection-box" class="box border-2 bg-white p-2 rounded-xl cursor-pointer hover:bg-blue-500">
                         <img class="w-10 mx-auto" src="assets/transaction1.png" alt="">
                         <h3 class="font-bold text-center">Transections</h3>
                     </div>
@@ -90,7 +90,7 @@
                                 <fieldset class="fieldset">
                                     <label class="fieldset-label font-bold">Account Number</label>
                                     <br>
-                                    <input type="text" class="input w-full" placeholder="Enter Your Account Number" value="01713687777" required/>
+                                    <input id="account-number" type="text" class="input w-full" placeholder="Enter Your Account Number" value="01713687777" required/>
                                     <br>
                                     <label  class="fieldset-label font-bold">Amount</label>
                                     <br>
@@ -283,6 +283,15 @@
 
               </section>
 
+              <!-- Transection History -->
+              <section id="transection-history">
+                <h1 class="font-bold text-4xl text-center m-4">Transection History</h1>
+
+                <div id="transection-container">
+
+                  
+                </div>
+              </section>
 
         </header>
     </section>
@@ -292,5 +301,6 @@
     <script src="script/transfer.js"></script>
     <script src="script/getbouns.js"></script>
     <script src="script/paybil.js"></script>
+    <script src="script/transection.js"></script>
 </body>
 </html>
