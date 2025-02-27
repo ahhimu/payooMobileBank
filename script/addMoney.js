@@ -1,8 +1,17 @@
+document.getElementById('logout-btn').addEventListener("click",function(){
+
+    window.location.href="../index.html";
+   })
+
+
+
+
 // Hide Cashout Section
  document.getElementById('cashout-container').style.display="none";
  document.getElementById('addmoney-container').style.display="block";
  document.getElementById('transfer-container').style.display="none";
  document.getElementById('coupon-code').style.display="none";
+ document.getElementById('paybill-container').style.display="none";
 document.getElementById('addmoney-box').addEventListener("click",function(){
     // this.style.backgroundColor = "red";
     document.getElementById('cashout-container').style.display="none";
@@ -22,7 +31,6 @@ document.getElementById('add-money-btn').addEventListener('click',function(event
     const mainBalance = document.getElementById('main-balance').innerText;
     const convertedMainBalance = parseFloat(mainBalance);
 
-   
 
     if(convertedAmount >= 50){
   

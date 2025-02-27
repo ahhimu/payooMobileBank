@@ -20,7 +20,7 @@
                         <small class="font-bold border p-2 ">Avilable Blance</small>
                     </div>
                 </div>
-                <button class="btn font-bold">Log Out</button>
+                <button id="logout-btn" class="btn font-bold bg-fuchsia-950 text-yellow-50">Log Out</button>
             </nav>
 
             <section class="mt-5 border-b-2 pb-3 ">
@@ -48,7 +48,7 @@
                         <h3 class="font-bold text-center">Get Bonus</h3>
                     </div>
 
-                    <div class="box border-2 bg-white p-2 rounded-xl cursor-pointer hover:bg-blue-500">
+                    <div id="pay-bill" class="box border-2 bg-white p-2 rounded-xl cursor-pointer hover:bg-blue-500">
                         <img class="w-10 mx-auto" src="assets/purse1.png" alt="">
                         <h3 class="font-bold text-center">Pay Bill</h3>
                     </div>
@@ -211,7 +211,7 @@
               </section>
 
               <!-- Pay Your Bill -->
-              <section id="coupon-code" class="mt-5 mx-2 pb-3">
+              <section id="paybill-container" class="mt-5 mx-2 pb-3">
                 <h1 class="font-bold text-4xl text-blue-700 text-center">Pay Your Utility Bill</h1>
 
                 
@@ -234,17 +234,47 @@
                             <option>Insurance</option>
                             <option>Others</option>
                           </select>
+
+                          <label class="fieldset-label font-bold"> Select Billing Month </label>
+
+                          <select class="select select-secondary w-full max-w-xs">
+                            <option disabled selected>Pick Month</option>
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                          </select>
+
+
                               <form action="">
                                 <fieldset class="fieldset">
                                     <label class="fieldset-label font-bold "> Enter Your Biller Id </label>
                                     <br>
                                   
-                                    <input id="get-bonus" type="text" class="input w-full text-center" placeholder="Enter Your 16 Digit Coupon Code Here" value="6158-4698-7365-4856" required/>
+                                    <input id="get-bonus" type="text" class="input w-full text-center" placeholder="Enter Your 16 Digit Coupon Code Here" value="6158-4698-7365" required/>
+                                    <br>
+                                    
+                              </form>
+
+                              <form action="">
+                                <fieldset class="fieldset">
+                                    <label class="fieldset-label font-bold "> Enter Billing Amount </label>
+                                    <br>
+                                  
+                                    <input id="get-bonus" type="text" class="input w-full text-center" placeholder="Enter Amount"  required/>
                                     <br>
                                     
                               </form>
                             
-                            <button id="bonus-btn" class="btn w-full mt-4 font-bold bg-sky-500 rounded-3xl">Pay Now </button>
+                            <button id="paybill-btn" class="btn w-full mt-4 font-bold bg-sky-500 rounded-3xl">Pay Now </button>
                           </fieldset>
                         </div>
                       </div>

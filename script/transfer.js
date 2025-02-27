@@ -6,7 +6,7 @@ document.getElementById('transfer-box').addEventListener("click",function(){
     document.getElementById('addmoney-container').style.display="none";
     document.getElementById('transfer-container').style.display="block";
     document.getElementById('coupon-code').style.display="none";
-    
+    document.getElementById('paybill-container').style.display="none";
     
     })
     
